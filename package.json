@@ -1,0 +1,32 @@
+{
+  "name": "homebrew-loader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "compile": "sass ./src/boot/theme.sass ./src/boot/dist/theme.css && electron-builder -wl ",
+    "compile-x86": "sass ./src/boot/theme.sass ./src/boot/dist/theme.css && electron-builder -wl --ia32",
+    "compile-all": "sass ./src/boot/theme.sass ./src/boot/dist/theme.css && electron-builder -mwl",
+    "build": "sass ./src/boot/theme.sass ./src/boot/dist/theme.css",
+    "test": "sass ./src/boot/theme.sass ./src/boot/dist/theme.css && electron . --no-sandbox"
+  },
+  "keywords": [
+    "homebrew",
+    "boot",
+    "pwed"
+  ],
+  "author": "!@#$%¨&*",
+  "license": "ISC",
+  "dependencies": {
+    "coffeescript": "^2.7.0",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "dev.github.stabletulymigdev.homebrew.loader"
+  }
+}
