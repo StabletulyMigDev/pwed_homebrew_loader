@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="./dist/theme.css">
 </head>
 <body>
+  <p id="VersionText">v0.0.2-alpha</p>
   <div id="bootloader">
     <h1>🍺 Homebrew Loader</h1>
     <button id="startButton">Start</button>
     <div id="console"></div>
     <div id="bootMenu" style="display: none;">
-      <input type="file" id="fileInput" class="select-btn" accept=".html">
+      <input type="file" id="fileInput" class="SelectBtn" accept=".html">
       <button id="loadButton">Load OS</button>
     </div>
     <iframe id="fileFrame" style="display: none; width: 100%; height: 500px;"></iframe>
